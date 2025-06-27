@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resep Masakan Enak</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Resep Masakan Enak</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="resep.html">Kumpulan Resep</a></li>
+      <li><a href="tips.html">Tips Memasak</a></li>
+      <li><a href="favorit.html">Favorit</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Selamat datang di dunia resep!</h2>
+      <p>Temukan berbagai resep masakan rumahan yang mudah dan lezat.</p>
+    </section>
+  </main>
+  
+  <script>
+    const content = document.getElementById('content');
+    const backButton = document.getElementById('backButton');
+    
+    function showPage(page) {
+        let html = '';
+        if (page === 'resep') {
+            html = '<h2>Daftar Resep</h2><p>Resep-resep favorit di sini...</p>';
+        } else if (page === 'favorit') {
+            html = '<h2>Favorit Saya</h2><p>Ini daftar resep favorit kamu...</p>';
+        }
+        content.innerHTML = html + backButton.outerHTML;
+        document.getElementById('backButton').style.display = 'inline-block';
+        window.scrollTo(0, 0); // scroll ke atas
+    }
+    
+    function goBack() {
+        location.reload(); 
+    }
+    
+    document.addEventListener('click', function(e) {
+        if (e.target && e.target.id === 'backButton') {
+            goBack();
+        }
+    });
+  </script>
+</body>
+</html>

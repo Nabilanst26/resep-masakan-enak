@@ -1,0 +1,74 @@
+/* Gaya Umum */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #fce3a0, #f6c37d); /* honey ke roasted butter */
+  margin: 0;
+  padding: 0;
+  color: #3e2723;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #f7c86a, #efb560); /* karamel madu ke gold soft */
+  color: #2e1f14;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* Navigasi */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to right, #f7cd84, #e9a94f); /* deep honey to soft caramel */
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #3e2723;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #b3541e; /* burnt caramel */
+}
+
+/* Konten Utama */
+main {
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.92);
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+}
+
+/* Tombol Back */
+.back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #f7c67f, #ecaa61); /* karamel madu ke peach burnt */
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  color: #3e2723;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.back-button:hover {
+  background: linear-gradient(to right, #e9a44d, #d98e38); /* deep caramel */
+  color: #2e1c13;
+}
